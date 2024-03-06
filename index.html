@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .main_input{
+         position: 'relative';
+      }
+      .warning{
+        position: absolute;
+    right: 19px;
+    top: 14px;
+      }
+  </style>
+    <title>Payment Information</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 mx-auto">
+                <div class="form-head mt-4">
+                <h1>Guest Information</h1>    
+                </div>
+
+                <div class="form-floating mb-2 mt-4 main_input">
+                    <input type="text" class="form-control form-input" id="input1" placeholder="">
+                    <label for="floatingInput" class="form-label" id="label1">First Name</label>
+                    <div class="warning" id="warn1" style="display: none;">
+                      <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                  </div>
+                  <span id="message1" style="display: none; color: #e02d21;font-size: 10px;
+                  font-weight: 500;"> A valid first name is required</span>
+                  </div>
+                  <div class="form-floating mt-4 main_input">
+                    <input type="text" class="form-control form-input" id="input2" placeholder="last-name">
+                    <label for="floatingPassword" class="form-label" id="label2">Last Name</label>
+                    <div class="warning" id="warn2" style="display: none;">
+                      <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                  </div>
+                   <span id="message2" style="display: none; color: #e02d21;font-size: 10px;
+                  font-weight: 500;"> A valid last name is required</span>
+                  </div>
+                 
+                  <div class="form-floating mb-2 mt-4 main_input">
+                    <input type="email" class="form-control form-input" id="input4" placeholder="name@example.com">
+                    <label for="floatingInput" class="form-label" id="label4">E-mail</label>
+                    <div class="warning" id="warn4" style="display: none;">
+                      <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                  </div>
+                  <span id="message4" style="display: none; color: #e02d21;font-size: 10px;
+                  font-weight: 500;"> A valid email is required</span>
+                    
+                  </div>
+
+                  
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-12 mx-auto">
+                <div class="form-head mt-5">
+                <h1>Payment Information</h1>    
+                </div>
+
+                <div class="payment-card ">
+                    <img src="assets/images/p1.svg"  alt="" class="payment-img">
+                    <img src="assets/images/p2.svg" alt="" class="payment-img">
+                    <img src="assets/images/p3.svg" alt="" class="payment-img">
+                    <img src="assets/images/p4.svg" alt="" class="payment-img">
+                    <img src="assets/images/p5.svg" alt="" class="payment-img">
+                    <img src="assets/images/p6.svg" alt="" class="payment-img">
+                    <img src="assets/images/p7.svg" alt="" class="payment-img">
+
+                </div>
+
+                <div class="form-floating mb-2 mt-4 main_input">
+                    <input type="text" class="form-control form-input" id="input5" placeholder="Carholder-name">
+                    <label for="floatingInput" class="form-label" id="label5">Carholder Name</label>
+                    <div class="warning" id="warn5" style="display: none;">
+                      <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                  </div>
+                  <span id="message5" style="display: none; color: #e02d21;font-size: 10px;
+                  font-weight: 500;"> Cardholder name is required</span>
+
+
+                  </div>
+                  <p class="required-p" id="requiredMessage">*Required</p>
+                  <div class="form-floating mt-4 main_input">
+                    <input type="text" class="form-control form-input" id="input6" placeholder="Card-name">
+                    <label for="floatingPassword" class="form-label" id="label6">Card Number</label>
+                    <div class="warning" id="warn6" style="display: none;">
+                      <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                  </div>
+                  <span id="message6" style="display: none; color: #e02d21;font-size: 10px;
+                  font-weight: 500;"> Card number is not valid</span>
+                  </div>
+                  <p class="required-p" id="requiredMessage">*Required</p>
+
+                  <div class="row">
+                    <div class="col-6 ">
+                        <div class="form-floating mt-4 main_input">
+                            <input
+                            type="number"
+                            class="form-control form-input "
+                          
+                            id="select1"
+                            placeholder="name"
+                        
+                        />
+      
+                           
+      
+      
+                            <span id="dropdownToggle" class="dropdown-icon" ></span>
+      
+                            <label for="floatingInput" class="select-label" id="label7"
+                              >Month</label
+                            >
+                            <div class="warning" id="warn7" style="display: none;">
+                              <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                          </div>
+                          <span id="message7" style="display: none; color: #e02d21;font-size: 10px;
+                          font-weight: 500;">Expiration month is required</span>
+                            
+                            <ul class="dropdown-menu drop1">
+                            
+      
+                             <li data-value="1">1</li>
+                             <li data-value="2">2</li>
+                             <li data-value="3">3</li>
+                             <li data-value="3">4</li>
+                             <li data-value="3">5</li>
+                             <li data-value="3">6</li>
+                             <li data-value="3">7</li>
+                             <li data-value="3">8</li>
+                             <li data-value="3">9</li>
+                             <li data-value="3">10</li>
+                             <li data-value="3">11</li>
+                             <li data-value="3">12</li>
+                              
+                             
+                              
+                              
+                              
+                              
+                            </ul>
+                            
+                          </div>
+
+                          <p class="required-p">*Required</p>
+
+                   </div>
+                   <div class="col-6 ">
+                    <div class="form-floating mt-4  main_input"  >
+                        <input
+                          type="number"
+                          class="form-control  form-input"
+                          id="floatingInput1"
+                          placeholder="name"
+                        
+                        />
+                        <span id="dropdownToggle1" class="dropdown-icon" ></span>
+                        <label for="floatingInput" class="select-label1" id="label8"
+                          > Year </label
+                        >
+                        <div class="warning" id="warn8" style="display: none;">
+                          <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+                      </div>
+                      <span id="message8" style="display: none; color: #e02d21;font-size: 10px;
+                      font-weight: 500;"> Expiration year is required</span>
+                        
+                        <ul class="dropdown-menu1 drop2" onclick="toggleInput()" style="margin-top:5px;">
+                         
+                  <li data-value="2" >2023 </li>
+                          <li data-value="3">2024 </li>
+                          <li data-value="4">2025</li>
+                          <li data-value="5">2026</li>
+                          <li data-value="6">2027 </li>
+                          <li data-value="7">2028 </li>
+                          <li data-value="8">2029</li>
+                          <li>  2030</li>
+                          <li data-value="9">2031</li>
+                          <li data-value="10">2032 </li>
+                          <li data-value="11">2033 </li>
+                          <li data-value="12">2034 </li>
+                          <li data-value="13">2035</li>
+                          <li data-value="14">2036 </li>
+                          <li data-value="15">2037</li>
+                          <li data-value="16">2038 </li>
+                          <li data-value="16">2039 </li>
+                          <li data-value="17">2040  </li>
+                          <li data-value="18">2041</li>
+                          <li data-value="19">2042 </li>
+                          
+                        </ul>
+                    </div>
+
+                      <p class="required-p">*Required</p>
+
+               </div>
+                 
+
+                 
+
+
+                  
+                
+            </div>
+
+
+            <div class="form-floating mt-4 main_input">
+                <input type="text" class="form-control form-input" id="input9" placeholder="Card-name">
+                <label for="floatingPassword" class="form-label" id="label9">CVV</label>
+                <div class="warning" id="warn9" style="display: none;">
+                  <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+              </div>
+              <span id="message9" style="display: none; color: #e02d21;font-size: 10px;
+              font-weight: 500;"> Card CVV is required</span>
+              </div>
+<p class="required-p">*Required</p>
+        </div>
+        
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-6 col-12 mx-auto">
+            <div class="form-head1 mt-5">
+            <h1>Billing Address</h1>    
+            </div>
+            <div class="form-floating  main_input">
+                <input
+                  type="select"
+                  class="form-control form-input"
+                  id="floatingInput2"
+                  placeholder="name"
+                 
+                />
+                <span id="dropdownToggle2" class="dropdown-icon" ></span>
+            
+                <label for="floatingInput" class="select-label2" id="label10"
+                  > Country</label
+                >
+
+
+                <div class="warning" id="warn10" style="display: none;">
+                  <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+              </div>
+              <span id="message10" style="display: none; color: #e02d21;font-size: 10px;
+              font-weight: 500;"> Please select your country</span>
+            <ul class="dropdown-menu2 drop3">
+                  <div class="scrolling" style=" background-color: white;  overflow-x: hidden;">
+                  <div class=" d-flex flex-row prefix-div  " >
+                    <span class="prefix-span pt-2"  style="padding-right: 15px;">Argentina</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Aruba </span>      
+                  </div>
+               
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Afghanistan</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Aland Islands         </span>
+                  </div>
+            
+               
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Albania</span>     
+                  </div>
+                  
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Algeria</span>         
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">American Samoa   </span>
+                    
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Andorra</span>    
+                  </div>
+            
+              <div class="">
+            
+              </div>
+                  <div class=" d-flex flex-row prefix-div " >
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Angola</span>         
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div  ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Anguilla      </span><br>
+                    
+                  </div>
+                 
+                  <div class=" d-flex prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Antigua and Barbuda         </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Argentina </span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Armenia</span>           
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Aruba</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Australia</span>       
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Austria</span>        
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Azerbaijan </span>      
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bahamas         </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bahrain</span>    
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bangladesh</span>      
+                  </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Barbados         </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Belarus</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Belgium</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Belize</span>     
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Benin</span>          
+                  </div>
+                 
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bermuda         </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bhutan</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bolivia</span>        
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bonaire</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bosnia and Herzegovina    </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Botswana</span>        
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Brazil</span>      
+                  </div>
+                 
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">British Virgin Islands         </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Brunei</span>      
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Bulgaria</span>    
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Burkina Faso        </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Burundi</span>        
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cambodia</span>    
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cameroon</span>     
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Canada</span>      
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cape Verde        </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cayman Islands      </span> 
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Central African Republic     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Chad </span>    
+                  </div>
+                 
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Chile</span>      
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">China</span>       
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Christmas Island     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cocos (Keeling) Islands     </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Colombia</span>         
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Comoros</span>      
+                  </div>
+                  
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Congo - Brazzaville        </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Congo - Kinshasa      </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cook Islands        </span>
+                  </div>
+                  
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Costa Rica        </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cote D'Ivoire         </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cuba</span>     
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Curaçao</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Cyprus</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Czech Republic     </span>
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Denmark</span>        
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Djibouti</span>     
+                  </div>
+                  
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Dominica     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Dominican Republic       </span>
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Ecuador</span>      
+                  </div>
+            <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Egypt</span>       
+                  </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">El Salvador     </span>
+                  </div>
+            
+                 
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Equatorial Guinea     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Eritrea</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Estonia</span>        
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Ethiopia</span>        
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Falkland Islands (Malvinas)       </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Faroe Islands        </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Fiji</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Finland</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">France</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">French Guiana     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">French Polynesia     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Gabon</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Gambia</span>     
+            </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Georgia</span>   
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Germany</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Ghana</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Gibraltar</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Greece</span>      
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Greenland</span>      
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Grenada     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Guadeloupespan    </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Guam</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Guatemala</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Guernsey     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Guinea</span>    
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Guinea-Bissau         </span>
+                  </div>
+                  
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Haiti</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Honduras</span>         
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Hong Kong     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Hrvatska (Croatia)     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Hungary</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Iceland</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">India</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Indonesia</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Iran</span>
+                       </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Iraq</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Ireland</span>    
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Isle of Man         </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Israel</span>        
+            
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Italy</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Jamaica     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Japan</span>       
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Jersey     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Jordan</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Kazakhstan</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Kenya</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Kiribati</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Kuwait</span>         
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Kyrgyz Republic       </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Laos</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Latvia</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Lebanon</span>     
+                  </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Lesotho</span>     
+                  </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Liberia</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Liberia</span>         
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Liechtenstein</span>     
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Lithuania</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Luxembourg</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Macao</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Macedonia</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Madagascar</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Malawi</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Malaysia</span>    
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Maldives</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Mali</span>            
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Malta</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Marshall Islands        </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Mexico</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Mongolia</span>      
+                  </div>
+            
+                 
+            
+                 
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Nepal</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Netherlands</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">New Zealand    </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Nicaragua</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Norway</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Oman</span>         
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Pakistan</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Palau</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Panama</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Papua New Guinea     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Philippines</span>    
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Poland</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Portugal</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Qatar</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Republic of Korea    </span>
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Reunion</span>    
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Romania</span>       
+                  </div>
+            
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Russia</span>      
+                  </div>
+            
+                 
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Saudi Arabia         </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Senegal</span>   
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Serbia</span>       
+                  </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Singapore</span>      
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">South Africa     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">South Sudan     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Spain</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Sri Lanka</span>     
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Sudan</span>   
+                  </div>
+            
+            
+                  
+                 
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Swaziland</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Sweden</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Taiwan</span>        
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Tajikistan</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Thailand</span>      
+                  </div>
+            
+                  
+            <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Turkey</span>       
+                  </div>
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">United Arab Emirates     </span>
+                  </div>
+            
+                  
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Uganda</span>         
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Ukraine</span>     
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">United Kingdom   </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">United States     </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">United States Minor Outlying Islands   </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Vanuatu</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Venezuela</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Vietnam</span>     
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Wallis and Futuna      </span>
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Yemen</span>   
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Zambia</span>       
+                  </div>
+            
+                  <div class=" d-flex flex-row prefix-div ">
+                         <span class="prefix-span pt-2"  style="padding-right: 15px;">Zimbabwe</span>       
+                  </div>
+            
+                 
+            
+                 </div>
+            
+                  
+            
+            
+                  
+                  
+                  
+                </ul>
+              </div>
+         
+
+              <p class="required-p">*Required</p>
+            
+              <div class="form-floating mt-4 main_input">
+                <input type="text" class="form-control form-input" id="input11" placeholder="Address Line 1">
+                <label for="floatingPassword" class="form-label" id="label11">Address Line 1</label>
+                <div class="warning" id="warn11" style="display: none;">
+                  <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+              </div>
+              <span id="message11" style="display: none; color: #e02d21;font-size: 10px;
+              font-weight: 500;"> Address line 1 is required</span>
+              </div>
+              <p class="required-p" id="requiredMessage">*Required</p>
+
+              <div class="form-floating mt-4 main_input">
+                <input type="text" class="form-control form-input" id="input12" placeholder="Address Line 2">
+                <label for="floatingPassword" class="form-label">Address Line 2</label>
+                <div class="warning" id="warn12" style="display: none;">
+                  <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+              </div>
+             
+              </div>
+
+              <div class="form-floating mt-4 main_input">
+            <input type="text" class="form-control form-input" id="input13" placeholder="City">
+            <label for="floatingPassword" class="form-label" id="label13">City</label>
+            <div class="warning" id="warn13" style="display: none;">
+              <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+          </div>
+           <span id="message13" style="display: none; color: #e02d21;font-size: 10px;
+                  font-weight: 500;"> City is required</span>
+          </div>
+          <p class="required-p">*Required</p>
+
+          <div class="form-floating mt-4 main_input">
+            <input type="text" class="form-control form-input" id="input14" placeholder="State/Province">
+            <label for="floatingPassword" class="form-label">State/Province</label>
+            <div class="warning" id="warn14" style="display: none;">
+              <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+          </div>
+          <span id="message1" style="display: none; color: #e02d21;font-size: 10px;
+          font-weight: 500;"> A valid first name is required</span>
+          </div>
+
+          <div class="form-floating mt-4 main_input">
+            <input type="text" class="form-control form-input" id="input15" placeholder="State/Province">
+            <label for="floatingPassword" class="form-label">Zip/Postal Code</label>
+            <div class="warning" id="warn15" style="display: none;">
+              <i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="true"></i>
+          </div>
+          <span id="message1" style="display: none; color: #e02d21;font-size: 10px;
+          font-weight: 500;"> A valid first name is required</span>
+          </div>
+
+
+          <hr>
+
+
+          <div class="form-check mt-4 mb-4 " style="margin-left: 20px;" >
+            <input class="form-check-input check-width " type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label check-a" for="flexCheckDefault">
+             
+I agree to the <a href="">Terms & Conditions</a>  for this show ticket purchase(s) and the <a href="">Terms of Use</a> and acknowledge that I have read and understand the <a href="">Privacy Policy</a>  (which governs the information I provide). Our <a href="">California Privacy Notice</a> describes the categories of personal information and sensitive personal information we collect and provides certain details about our processing of that information.
+            </label>
+          </div>
+
+          <hr>
+
+
+          <div class="footer mt-5 m-3">
+            <h1 >COPYRIGHT © 2023 MGM RESORTS INTERNATIONAL ALL RIGHT RESERVED</h1>
+         <span class="footer-a"><a href="">PRIVACY POLICY</a> | <a href="">TERMS OF USE</a> | <a href="">DO NOT SELL/SHARE MY PERSONAL INFORMATION</a> | <a href="">OPT-OUT OF ONLINE TARGETED ADVERTISING</a></span>
+            <div>
+                
+            </div>
+
+          </div>
+    </div>
+</div>
+
+
+<script src="javascript.js"></script>
+
+
+</body>
+</html>

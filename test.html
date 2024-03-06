@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Flag Dropdown</title>
+   Bootstrap CSS 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   Custom CSS 
+  <style>
+    .flag-icon {
+      width: 20px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="countryDropdown">
+        <span class="flag-icon" id="selectedFlag"></span>
+        <span id="selectedCountry">Select Country</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="countryDropdown">
+         Add country flags and names here 
+        <a class="dropdown-item" href="#" onclick="selectCountry('us', 'United States')">🇺🇸 United States</a>
+        <a class="dropdown-item" href="#" onclick="selectCountry('ca', 'Canada')">🇨🇦 Canada</a>
+         Add more countries as needed 
+      </div>
+    </div>
+    <input type="text" class="form-control" id="countryInput" placeholder="Enter Country">
+  </div>
+</div>
+
+ Bootstrap JS and Popper.js 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function selectCountry(flagCode, countryName) {
+    document.getElementById('selectedFlag').innerHTML = `<img class="flag-icon" src="https://flagcdn.com/w20/${flagCode.toLowerCase()}.png" alt="${countryName}">`;
+    document.getElementById('selectedCountry').innerText = countryName;
+    document.getElementById('countryInput').value = countryName;
+  }
+</script>
+
+</body>
+</html> -->
